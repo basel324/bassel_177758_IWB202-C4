@@ -248,7 +248,7 @@ function validateForm() {
     const nameRegex = /^[\u0600-\u06FF\s]+$/;
     const nationalIdRegex = /^[0-9]{11}$/;
     const dobRegex = /^(0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[0-2])-\d{4}$/;
-    const phoneRegex = /^09[1|2][0-9]{7}$/;
+    const phoneRegex = /^09[1-9][0-9]{7}$/;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!nationalIdRegex.test(nationalId)) {
